@@ -26,7 +26,7 @@ pipeline {
         }
         stage("Deploy"){
             steps {
-                echo "Deploying the VM"
+                echo "Deploying the APP"
                 sh "docker-compose down && docker-compose up -d"
                 
             }

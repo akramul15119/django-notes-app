@@ -17,7 +17,7 @@ pipeline {
         
         stage("Deploy"){
             steps {
-                echo "Deploying the Server"
+                echo "Auto Deploying the Server"
                 sh "docker-compose down && docker-compose up -d"
                 
             }
